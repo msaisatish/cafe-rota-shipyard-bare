@@ -1,0 +1,153 @@
+/* The café's own layout pieces. Every colour, corner and step is a theme token. */
+
+.cafe-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--space) * 3);
+  padding-bottom: calc(var(--space) * 4);
+  margin-bottom: calc(var(--space) * 6);
+  border-bottom: 1px solid var(--line);
+}
+
+.cafe-name {
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.cafe-person {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.cafe-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--space) * 3);
+  margin-bottom: calc(var(--space) * 5);
+}
+
+.cafe-header h1 {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--space) * 3);
+  overflow-wrap: anywhere;
+}
+
+.cafe-header-actions,
+.cafe-row-actions,
+.cafe-week-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space) * 2);
+  align-items: center;
+}
+
+.cafe-week-nav {
+  margin-bottom: calc(var(--space) * 4);
+  gap: calc(var(--space) * 5);
+}
+
+.cafe-note {
+  color: var(--muted);
+}
+
+.cafe-error {
+  color: var(--danger-fg);
+  background: var(--danger);
+  border-radius: var(--radius);
+  padding: calc(var(--space) * 2) calc(var(--space) * 3);
+}
+
+.cafe-empty {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: calc(var(--space) * 6);
+  max-width: 40rem;
+}
+
+.cafe-form {
+  display: grid;
+  gap: calc(var(--space) * 4);
+}
+
+.cafe-field {
+  display: grid;
+  gap: calc(var(--space) * 1);
+}
+
+.cafe-field label {
+  margin: 0;
+}
+
+.cafe-field input,
+.cafe-field select {
+  width: 100%;
+}
+
+.cafe-field-hint {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.cafe-field-error {
+  color: var(--danger-fg);
+  font-size: 0.9em;
+}
+
+.cafe-time {
+  font-variant-numeric: tabular-nums;
+}
+
+.cafe-shifts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: calc(var(--space) * 3);
+  max-width: 36rem;
+}
+
+.cafe-shift {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: calc(var(--space) * 4);
+  display: grid;
+  gap: calc(var(--space) * 2);
+}
+
+.cafe-shift h2 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.cafe-shift-time {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+
+.cafe-shift-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space) * 3);
+  align-items: center;
+}
+
+.cafe-shift.is-next {
+  border-color: var(--accent);
+  border-width: 2px;
+}
+
+.cafe-plain {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: calc(var(--space) * 12) calc(var(--space) * 6);
+}
